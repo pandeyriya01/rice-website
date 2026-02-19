@@ -1,0 +1,19 @@
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    transition: transform var(--transition-base);
+}
+
+.btn:hover .btn-icon {
+    transform: translateX(3px);
+}
+
+body[dir="rtl"] .btn-icon {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+body[dir="rtl"] .btn:hover .btn-icon {
+    transform: translateX(-3px);
+}

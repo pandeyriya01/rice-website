@@ -1,0 +1,11 @@
+.products-grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+    .products-grid-page {
+        grid-template-columns: 1fr;
+    }
+}

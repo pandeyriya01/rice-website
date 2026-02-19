@@ -1,0 +1,112 @@
+/* ===== Compact Contact Page ===== */
+
+.contact-page {
+    padding: 60px 0;
+}
+
+/* Grid gap kam */
+.contact-grid {
+    gap: 40px;
+}
+
+/* Form section compact */
+.contact-form-section {
+    padding: 35px;
+    border-radius: 16px;
+}
+
+/* Heading smaller */
+.contact-form-section h2,
+.contact-info-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Info cards compact */
+.contact-info-card {
+    padding: 18px;
+    border-radius: 12px;
+}
+
+/* Icon smaller */
+.contact-info-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+}
+
+/* WhatsApp button compact */
+.whatsapp-cta {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+
+/* Map section compact */
+.map-section {
+    margin-top: 0px;
+}
+
+.map-placeholder {
+    min-height: 20px;
+}
+.contact-form-section input,
+.contact-form-section textarea {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+/* Contact info cards horizontal */
+
+.contact-info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 cards per row */
+    gap: 20px;
+}
+
+/* Card thoda clean */
+.contact-info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Icon left side */
+.contact-info-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+/* Responsive: mobile pe wapas vertical */
+@media (max-width: 768px) {
+    .contact-info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+.contact-page {
+    padding-bottom: 0px;
+}
+/* REMOVE EXTRA GAP ABOVE FOOTER */
+
+.map-section {
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.map-placeholder {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 150px;   /* optional compact */
+}
+
+.contact-page {
+    padding-bottom: 0 !important;
+}
+
+.section {
+    padding-bottom: 0 !important;
+}

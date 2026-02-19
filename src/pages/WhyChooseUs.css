@@ -1,0 +1,77 @@
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.reason-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+}
+
+.reason-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-2xl);
+    border-color: var(--color-primary);
+}
+
+.reason-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-base);
+}
+
+.reason-card:hover .reason-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.reason-card h3 {
+    color: var(--color-black);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.reason-card p {
+    color: var(--color-gray-600);
+    line-height: 1.7;
+}
+
+.testimonial-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--color-gray-700);
+    max-width: 800px;
+    margin: var(--spacing-lg) auto;
+    line-height: 1.8;
+}
+
+.testimonial-author {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-text {
+        font-size: 1.25rem;
+    }
+}
