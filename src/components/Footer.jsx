@@ -38,7 +38,7 @@ const Footer = () => {
             </p>
 
             <div className="footer-social">
-              <a href="https://facebook.com/nyjahexim" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61587671925232" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
 
