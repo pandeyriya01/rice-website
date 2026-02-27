@@ -75,8 +75,7 @@
 /* CTA Section */
 .cta-section {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1920');
-    background-size: cover;
+    background-image: url('../assets/rawrice.jpg');
     background-position: center;
     background-attachment: fixed;
     padding: var(--spacing-3xl) 0;

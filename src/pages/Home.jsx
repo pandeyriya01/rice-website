@@ -1,3 +1,5 @@
+import parboiledImg from "../assets/parboiled.jpg";
+import riceImg from "../assets/rawrice.jpg";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -43,7 +45,7 @@ const Home = () => {
             description: t.products.nonBasmatiDesc,
         },
         {
-            image: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=800',
+            image:  parboiledImg,
             title: t.products.parboiledTitle,
             description: t.products.parboiledDesc,
         },

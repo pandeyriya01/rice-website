@@ -1,5 +1,6 @@
 import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
+import riceImg from "../assets/rice.jpg";
 import Hero from '../components/Hero';
 import ContactForm from '../components/ContactForm';
 import './Contact.css';
@@ -12,7 +13,7 @@ const Contact = () => {
             <Hero
                 title={t.contact.title}
                 subtitle={t.contact.subtitle}
-                backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920"
+                backgroundImage={riceImg}
                 height="small"
             />
 
@@ -35,8 +36,10 @@ const Contact = () => {
                                         <FaMapMarkerAlt />
                                     </div>
                                     <div className="contact-info-content">
-                                        <h4>{t.contact.address}</h4>
-                                        <p>{t.contact.addressText}</p>
+                                       <h4>{t.contact.address}</h4>
+<p>
+  Kanth Road, Bhatavali, Near Photon Hospital, Moradabad – 244001, Uttar Pradesh, India
+</p>
                                     </div>
                                 </div>
 
@@ -44,19 +47,22 @@ const Contact = () => {
                                     <div className="contact-info-icon">
                                         <FaPhone />
                                     </div>
-                                    <div className="contact-info-content">
-                                        <h4>{t.contact.phone}</h4>
-                                        <a href="tel:+919990805112">{t.contact.phoneText}</a>
-                                    </div>
-                                </div>
+                                   <div className="contact-info-content">
+                                   <h4>{t.contact.phone}</h4>
+  
+                                  <a href="tel:+919990805112">+91 9990805112</a>
+                                 <br />
+                                <a href="tel:+918630880926">+91 8630880926</a>
 
+                                  </div>
+                                </div>
                                 <div className="contact-info-card">
                                     <div className="contact-info-icon">
                                         <FaEnvelope />
                                     </div>
                                     <div className="contact-info-content">
                                         <h4>{t.contact.email}</h4>
-                                        <a href="mailto:info@riceexport.com">{t.contact.emailText}</a>
+                                        <a href="mailto:info@nyjahexim.com">{t.contact.emailText}</a>
                                     </div>
                                 </div>
 

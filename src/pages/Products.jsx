@@ -1,4 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
+import parboiledImg from "./parboiled.jpg";
+import brokenImg from "./broken.jpg";
 import Hero from '../components/Hero';
 import ProductCard from '../components/ProductCard';
 import './Products.css';
@@ -18,12 +20,12 @@ const Products = () => {
             description: t.products.nonBasmatiDesc,
         },
         {
-            image: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=800',
+            image: parboiledImg,
             title: t.products.parboiledTitle,
             description: t.products.parboiledDesc,
         },
         {
-            image: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=800',
+            image: brokenImg,
             title: t.products.brokenTitle,
             description: t.products.brokenDesc,
         },

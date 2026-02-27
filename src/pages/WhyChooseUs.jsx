@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import ricePlantImg from "../assets/rawrice.jpg";
 import { FaHandshake, FaLeaf, FaSeedling, FaClock, FaDollarSign, FaHeadset } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import Hero from '../components/Hero';
@@ -21,7 +22,7 @@ const WhyChooseUs = () => {
             <Hero
                 title={t.whyChooseUs.title}
                 subtitle={t.whyChooseUs.subtitle}
-                backgroundImage="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1920"
+                backgroundImage={ricePlantImg}
                 height="medium"
             />
 
@@ -43,23 +44,6 @@ const WhyChooseUs = () => {
                             </motion.div>
                         ))}
                     </div>
-                </div>
-            </section>
-
-            <section className="section bg-beige">
-                <div className="container text-center">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                    >
-                        <h2>Experience the Difference</h2>
-                        <p className="testimonial-text">
-                            "We have been sourcing rice from this company for over 5 years. Their commitment to quality and timely delivery has made them our trusted partner in the UAE market."
-                        </p>
-                        <p className="testimonial-author">- Ahmed Al Mansoori, Dubai</p>
-                    </motion.div>
                 </div>
             </section>
         </div>
