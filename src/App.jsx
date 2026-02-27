@@ -12,7 +12,6 @@ import WhyChooseUs from './pages/WhyChooseUs';
 import Contact from './pages/Contact';
 import './App.css';
 
-// Scroll to top on route change
 function ScrollToTop() {
   const { pathname } = useLocation();
 
