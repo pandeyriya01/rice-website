@@ -92,14 +92,32 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Map Section */}
-            <section className="map-section">
-                <div className="map-placeholder">
-                    <FaMapMarkerAlt />
-                    <p>Google Maps Integration</p>
-                    <small>Add your Google Maps API key and coordinates</small>
-                </div>
-            </section>
+           {/* Map Section */}
+<section className="map-section">
+  <div className="map-container">
+
+    {/* Address Text */}
+    <div className="map-address">
+      <FaMapMarkerAlt className="map-icon" />
+      <p>
+        Kanth Road, Bhatavali, Near Photon Hospital,
+        Moradabad – 244001, Uttar Pradesh, India
+      </p>
+    </div>
+
+    {/* Google Map */}
+    <iframe
+      src="https://www.google.com/maps?q=28.898053,78.725632&output=embed"
+      width="100%"
+      height="350"
+      style={{ border: 0, borderRadius: "12px" }}
+      allowFullScreen=""
+      loading="lazy"
+      title="Google Map"
+    ></iframe>
+
+  </div>
+</section>
         </div>
     );
 };
